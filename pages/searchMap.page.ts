@@ -11,7 +11,6 @@ export class SearchMapPage {
   constructor(page: Page) {
     this.page = page;
 
-    // Prefer semantic selectors (resilient to OutSystems changes)
     this.searchInput = page.getByPlaceholder(/ort|postleitzahl/i);
     this.searchButton = page.getByRole("button", { name: /gruppen suchen/i });
 
@@ -27,7 +26,6 @@ export class SearchMapPage {
     await this.page.keyboard.press("Enter");
     await this.searchButton.click();
 
-    // Wait for async update (important with React + API)
     await this.page.waitForTimeout(2000);
   }
 
