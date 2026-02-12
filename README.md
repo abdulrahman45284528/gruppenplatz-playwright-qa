@@ -2,7 +2,7 @@
 
 This repository contains automated end-to-end tests for the Gruppenplatz Search & Map feature.
 
-## 📌 Scope Covered
+##  Scope Covered
 
 - UI Smoke Test
 - Location Search
@@ -10,14 +10,14 @@ This repository contains automated end-to-end tests for the Gruppenplatz Search 
 - Pagination Validation
 - Details Page Navigation
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - Playwright
 - TypeScript
 - Page Object Model structure
 - CI-ready project setup
 
-## 📂 Project Structure
+##  Project Structure
 
 playwright/
 ├── tests/
